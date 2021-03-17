@@ -1,0 +1,17 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+
+function LeftMenu(){
+    return(
+        <ul class="nav-news-feed">
+            <li><i class="icon ion-ios-paper"></i><div><NavLink to="newsfeednews">My Newsfeed</NavLink></div></li>
+            <li><i class="icon ion-ios-people"></i><div><NavLink to="newsfeed-people-nearby.html">People Nearby</NavLink></div></li>
+            <li><i class="icon ion-ios-people-outline"></i><div><NavLink to="newsfeed-friends.html">Friends</NavLink></div></li>
+            <li><i class="icon ion-chatboxes"></i><div><NavLink to="newsfeed-messages.html">Messages</NavLink></div></li>
+            <li><i class="icon ion-images"></i><div><NavLink to="newsfeedimages">Images</NavLink></div></li>
+            <li><i class="icon ion-ios-videocam"></i><div><NavLink to="newsfeed-videos.html">Videos</NavLink></div></li>
+        </ul>
+    );
+}
+
+export default LeftMenu;
